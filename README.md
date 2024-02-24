@@ -202,11 +202,11 @@ Override component template:
 
 ```vue
 <template>
-  <SgxTitle v-slot="{ title, myParam1, myParam2 }" as="div">
+  <SgxPageHeader v-slot="{ title, myParam1, myParam2 }" as="div">
     <h1>{{ title }}</h1>
     <p>{{ myParam1 }}</p>
     <p>{{ myParam2 }}</p>
-  </SgxTitle>
+  </SgxPageHeader>
 </template>
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "sgx-nuxt-page-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Page header feature for Nuxt",
   "repository": {
     "type": "git",
