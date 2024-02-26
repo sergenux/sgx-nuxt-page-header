@@ -32,11 +32,13 @@ export default defineNuxtConfig({
 
 ## Configuration
 
-### Module options
-
 **Type:**
 
 ```ts
+interface NuxtConfig {
+  sgxPageHeader: ModuleOptions
+}
+
 interface ModuleOptions {
   // Prefix for components and composables
   // Default: 'Sgx'
