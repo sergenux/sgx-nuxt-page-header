@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 
 ```ts
 interface NuxtConfig {
-  sgxPageHeader: ModuleOptions
+  sgxPageHeader?: ModuleOptions
 }
 
 interface ModuleOptions {
