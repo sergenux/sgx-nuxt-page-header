@@ -39,7 +39,7 @@ export default defineNuxtConfig({
 ```ts
 interface ModuleOptions {
   // Prefix for components and composables
-  // Default: "Sgx"
+  // Default: 'Sgx'
   prefix?: string
 }
 ```
@@ -212,12 +212,14 @@ Override component template:
 
 ## Composables
 
-### `usePageHeader`
+### `useSgxPageHeader`
 
 **Type:**
 
 ```ts
-function (): ComputedRef<Result>
+interface Composable {
+  (): ComputedRef<Result>
+}
 
 interface Result {
   // Page title
@@ -244,12 +246,6 @@ interface Result {
 
 <script setup lang="ts">
 const pageHeader = useSgxPageHeader()
-
-// Individual values without loss of reactivity
-// const title = computed(() => pageHeader.value.title)
-// const visible = computed(() => pageHeader.value.visible)
-// const myParam1 = computed(() => pageHeader.value.myParam1)
-// const myParam2 = computed(() => pageHeader.value.myParam2)
 </script>
 ```
 
