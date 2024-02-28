@@ -2,7 +2,6 @@ import { name, version } from '../package.json'
 import {
   addComponent,
   addImports,
-  addRouteMiddleware,
   createResolver,
   defineNuxtModule
 } from '@nuxt/kit'
@@ -24,12 +23,6 @@ export default defineNuxtModule<ModuleOptions>({
     const { resolve } = createResolver(import.meta.url)
 
     nuxt.options.build.transpile.push(resolve('runtime'))
-
-    addRouteMiddleware({
-      name: 'sgx-page-header',
-      path: resolve('runtime/middleware/page-header'),
-      global: true
-    })
 
     addComponent({
       name: `${options.prefix}PageHeader`,

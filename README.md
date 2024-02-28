@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 })
 ```
 
-3. Add `<SgxPageHeader>` component to `app.vue`:
+3. Add `<SgxPageHeader>` component to layout or `app.vue`:
 
 ```vue
 <template>

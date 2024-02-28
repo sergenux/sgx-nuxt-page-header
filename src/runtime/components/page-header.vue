@@ -1,5 +1,5 @@
 <template>
-  <component :is="as">
+  <component :is="as" v-if="pageHeader.visible">
     <slot v-bind="pageHeader">{{ pageHeader.title }}</slot>
   </component>
 </template>
